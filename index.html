@@ -10,8 +10,32 @@
 <title>MEMEHUB</title>
 </head>
 <style>
+.css-selector {
+    background: linear-gradient(44deg, #0da7e1, #6389bd, #0053c5, #0d00c5);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
     body {
-        background-color: 	#abab90;
+       
         overflow-x: hidden;
         overflow-y: hidden;
         font-family: 'Raleway', sans-serif;
@@ -24,7 +48,7 @@ grid-column-gap: 30px;
 grid-row-gap: 15px;
 height: 100vh;
 width: 100vw;
-color: rgb(0, 0, 0);
+color: rgb(237, 237, 237);
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 3; 
@@ -137,8 +161,7 @@ box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
     margin: 1rem;
 }
 .bluu {
-    color: blue;
-}
+    color: rgb(183, 107, 9)}
 
 @media only screen and (max-width: 600px) {
   .parent {
@@ -296,7 +319,7 @@ ul.open {
   }
 }
 </style>
-<body>
+<body class="css-selector">
     <div class="parent">
         <div class="div1">
             <img class="img" src="./logo.png" alt="">
