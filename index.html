@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>MEMEHUB</title>
+</head>
+<style>
+    body {
+        background-color: 	#abab90;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        font-family: 'Raleway', sans-serif;
+    }
+    .parent {
+display: grid;
+grid-template-columns: repeat(11, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 15px;
+height: 100vh;
+width: 100vw;
+color: rgb(0, 0, 0);
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; 
+display: flex;
+flex-direction: row;
+line-height: 60px;}
+.div2 { grid-area: 1 / 10 / 2 / 12;
+justify-content: center;
+align-items: center; }
+.div3 { grid-area: 1 / 8 / 2 / 10;
+
+}
+.div4 { grid-area: 3 / 2 / 6 / 5;        padding: 05px 0 0 10px; }
+.div5 { grid-area: 3 / 5 / 6 / 8;         padding: 05px 0 0 10px;}
+.div6 { grid-area: 3 / 8 / 6 / 11;        padding: 05px 0 0 10px; }
+.div7 { grid-area: 6 / 2 / 9 / 5;        padding: 05px 0 0 10px; }
+.div8 { grid-area: 6 / 5 / 9 / 8;        padding: 05px 0 0 10px; }
+.div9 { grid-area: 6 / 8 / 9 / 11;        padding: 05px 0 0 10px; }
+.div10 { grid-area: 10 / 2 / 11 / 4; }
+.div11 { grid-area: 10 / 4 / 11 / 6; }
+.div12 { grid-area: 10 / 7 / 11 / 9; }
+.div13 { grid-area: 10 / 9 / 11 / 11; }
+.img {
+    max-height: 100px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 80px;
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+.button {
+    margin-top: 1.2rem;
+    background-color: #44a7b8;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+    border-radius: 4px;
+    border: none;
+}
+.button:hover {
+
+    background-color: rgb(1, 249, 59);
+    padding: 5px;
+    color: black;
+    transform: scale(1.02);
+    font-weight: 300;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+-webkit-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+-moz-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+
+}
+.buttonsmall {
+margin-top: 3.2rem;
+background-color: rgb(0, 0, 0);
+    padding: 5px;
+    color: white;
+    transition: all .5s ease-in-out;
+    border: none;
+}
+.buttonsmall:hover {
+
+    background-color: rgb(254, 254, 254);
+    padding: 5px;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+    box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+-webkit-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+-moz-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+
+}
+.title {
+    margin: 0;
+}
+.box {
+border: none;
+border-radius: 16px;
+background-color: #44a7b8;
+transition: all .3s ease-in-out;
+color: rgb(0, 0, 0) !important;
+}
+.box:hover {
+
+border-radius: 8px;
+border: none;
+background: rgb(0,0,0);
+background: -moz-linear-gradient(198deg, rgba(0,0,0,1) 12%, rgba(245,245,220,1) 57%, rgba(245,245,220,1) 100%);
+background: -webkit-linear-gradient(198deg, rgba(0,0,0,1) 12%, rgba(245,245,220,1) 57%, rgba(245,245,220,1) 100%);
+background: linear-gradient(198deg, rgba(0,0,0,1) 12%, rgba(245,245,220,1) 57%, rgba(245,245,220,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f5f5dc",GradientType=1);
+color: rgb(0, 0, 0) !important;
+transform: scale(1.02);
+font-weight: 400;
+box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+-webkit-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+-moz-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+}
+.imgicon {
+   max-width: 50px;
+    height: auto;
+    float: right;
+    justify-self: flex-end;
+    margin: 1rem;
+}
+.bluu {
+    color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    display: block;
+  }
+  body {
+    height: fit-content;
+    overflow-y: scroll;
+  }
+  .img {
+    margin-left: 10px;
+    height: 50px;
+    margin-right: 5px;
+   
+  }
+  .div1 {
+    line-height: 10px;
+    margin-bottom: 5rem;
+  }
+  .div2 {
+    position: absolute;
+    top: 0;
+    right:0;
+
+  }
+  .button {
+    font-size: 17px;
+    margin-top: 0.7rem;
+  }
+  .box {
+    width: 93vw;
+    margin: 20px 0;
+  }
+
+}
+</style>
+<body>
+    <div class="parent">
+        <div class="div1">
+            <img class="img" src="./logo.png" alt="">
+            <h1>MEME<span class="bluu">HUB</span></h1>    
+        </div>
+        <div class="div2">
+            <a href=""> <button class="button" >CONNECT</button> </a>    
+        </div>
+        <div class="div3"> </div>
+        <div class="div4 box"><h1 class="title" > SWAP <img class="imgicon" src="./swap_icon.ff8c9b33.svg" alt=""></h1>
+            <p>Swap tokens</p>
+
+            <button class="buttonsmall" >LEARN MORE ></button>
+        </div>
+        <div class="div5 box"><h1 class="title" >MARKET<img class="imgicon" src="./yield_icon.5546a444.svg" alt=""></h1> 
+            <p>Buy, Sell,Create,List and Trade NFTs</p>
+            <button class="buttonsmall" >LEARN MORE ></button>
+        </div>
+        <div class="div6 box"><h1 class="title" >WALLET<img class="imgicon" src="./bonefolio_icon.8ac2bb35.svg" alt=""></h1> 
+            <p>Sniper Bot</p>
+            <button class="buttonsmall" >LEARN MORE ></button>
+        </div>
+        <div class="div7 box"><h1 class="title" >MemeDAO<img class="imgicon" src="./bury_icon.8d33b1f9.svg" alt=""></h1> 
+            <p>Vote and Submit proposals</p>
+            <button class="buttonsmall" >LEARN MORE ></button>
+        </div>
+        <div class="div8 box"><h1 class="title" >FARM<img class="imgicon" src="./dig_icon.7927c2f5.svg" alt=""></h1> 
+            <p>LGrow with us</p>
+            <button class="buttonsmall" >LEARN MORE ></button>
+        </div>
+        <div class="div9 box"><h1 class="title" >STAKE<img class="imgicon" src="./yield_icon.5546a444.svg" alt=""></h1> 
+            <p>Earn dividends from your staked tokens</p>
+            <button class="buttonsmall" >LEARN MORE ></button>
+        </div>
+        <div class="div10">   <button class="buttonsmall" >TWITTER</button>   <button class="buttonsmall" >MEDIUM</button> </div>
+
+        <div class="div12">    </div>
+        <div class="div13">   </div>
+        </div>
+</body>
+</html>
