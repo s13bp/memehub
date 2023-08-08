@@ -11,7 +11,7 @@
 </head>
 <style>
 .css-selector {
-    background: linear-gradient(44deg, #0da7e1, #516279, #657892, #494583);
+    background: linear-gradient(44deg, #555555, #626262, #171717, #000000);
     background-size: 800% 800%;
 
     -webkit-animation: AnimationName 18s ease infinite;
@@ -41,27 +41,33 @@
         font-family: 'Raleway', sans-serif;
     }
     .parent {
-display: grid;
-grid-template-columns: repeat(11, 1fr);
-grid-template-rows: repeat(10, 1fr);
-grid-column-gap: 30px;
-grid-row-gap: 15px;
-height: 100vh;
-width: 100vw;
-color: rgb(237, 237, 237);
-}
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+    margin-top: -50px;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(237, 237, 237);
+    }
 
 .div1 { grid-area: 1 / 1 / 2 / 3; 
 display: flex;
 flex-direction: row;
-line-height: 60px;}
+line-height: 60px;
+margin-top: 100px;
+}
 .div2 { grid-area: 1 / 10 / 2 / 12;
-justify-content: center;
-align-items: center; }
+  justify-content: flex-end;
+align-items: flex-end;
+margin-top: 100px;
+}
 .div3 { grid-area: 1 / 8 / 2 / 10;
 
+
 }
-.div4 { grid-area: 3 / 2 / 6 / 5;        padding: 05px 0 0 10px; }
+.div4 { grid-area: 3 / 2 / 6 / 5;        padding: 05px 0 0 10px; display: relative; }
 .div5 { grid-area: 3 / 5 / 6 / 8;         padding: 05px 0 0 10px;}
 .div6 { grid-area: 3 / 8 / 6 / 11;        padding: 05px 0 0 10px; }
 .div7 { grid-area: 6 / 2 / 9 / 5;        padding: 05px 0 0 10px; }
@@ -92,28 +98,34 @@ p {
     transition: all .5s ease-in-out;
     border-radius: 4px;
     border: none;
+
 }
 .button:hover {
 
     background-color: rgb(1, 249, 59);
-    padding: 5px;
+    padding: 10px;
     color: black;
     transform: scale(1.02);
     font-weight: 300;
-    border-radius: 7px;
+
     letter-spacing: 1px;
-    box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
--webkit-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
--moz-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+    box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+-webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+-moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
 
 }
 .buttonsmall {
-margin-top: 3.2rem;
-background-color: rgb(0, 0, 0);
+    margin-top: 3.2rem;
+    background-color: rgb(0, 0, 0);
     padding: 5px;
     color: white;
     transition: all .5s ease-in-out;
     border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 10px 10px
+
 }
 .buttonsmall:hover {
 
@@ -122,9 +134,9 @@ background-color: rgb(0, 0, 0);
     color: black;
     font-weight: 300;
     letter-spacing: 1px;
-    box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
--webkit-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
--moz-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+    box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+    -webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+    -moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
 
 }
 .title {
@@ -136,6 +148,10 @@ border-radius: 16px;
 background-color: #44a7b8;
 transition: all .3s ease-in-out;
 color: rgb(0, 0, 0) !important;
+height:250px;
+position: relative;
+
+
 }
 .box:hover {
 
@@ -149,9 +165,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 color: rgb(0, 0, 0) !important;
 transform: scale(1.02);
 font-weight: 400;
-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
--webkit-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
--moz-box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
+box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+-webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+-moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
 }
 .imgicon {
    max-width: 50px;
@@ -161,30 +177,38 @@ box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
     margin: 1rem;
 }
 .bluu {
-    color: rgb(183, 107, 9)}
-
+    color: #ffa31a}
+.potea {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .parent {
     display: block;
+    margin-top: 12rem;
   }
   body {
-    height: fit-content;
+    height: 100%;
     overflow-y: scroll;
   }
   .img {
     margin-left: 10px;
     height: 50px;
     margin-right: 5px;
+    margin-top: 10px;
    
   }
   .div1 {
-    line-height: 10px;
-    margin-bottom: 5rem;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin-top: 0;
+
   }
   .div2 {
     position: absolute;
     top: 0;
     right:0;
+    margin-top: 0;
 
   }
   .button {
@@ -194,6 +218,10 @@ box-shadow: -1px 0px 24px 9px rgba(0,0,0,0.82);
   .box {
     width: 93vw;
     margin: 20px 0;
+    
+  }
+  .potea {
+    display: inline
   }
 
 }
@@ -287,15 +315,15 @@ ul li {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
-  background: #c8c8c8;
+  background: #000000;
   display: block;
   padding: 6px 20px;
   text-align: center;
-  color: #555;
+  color: #ffffff;
 }
 ul li:hover {
-  color: #f7486a;
-  background: #afafaf;
+  color: #141414;
+  background: #998383;
   font-weight: 900;
 }
 ul.open {
@@ -317,18 +345,29 @@ ul.open {
   margin-left:0% ;
   max-height: 0;
   }
+  .hide {
+    display: none;
+  }
+  .div2{
+    margin-top: 10px;
+  }
+  .box {
+    margin-top: 50px;
+  }
 }
 </style>
 <body class="css-selector">
     <div class="parent">
         <div class="div1">
             <img class="img" src="./logo.png" alt="">
-            <h1>MEME<span class="bluu">HUB</span></h1>    
+            <h1 class="hide" >MEME<span class="bluu">HUB</span></h1>    
         </div>
         <div class="div2">
-            <a href=""> <button class="button" >CONNECT</button> </a>    
+          <a href=""> <button class="button" >CONNECT</button> </a>   
         </div>
-        <div class="div3"> </div>
+        <div class="div3"> 
+
+        </div>
         <div class="div4 box"><h1 class="title" > SWAP <img class="imgicon" src="./swap_icon.ff8c9b33.svg" alt=""></h1>
             <p>Swap tokens for native crypto assets</p>
 
@@ -351,14 +390,14 @@ ul.open {
             <button class="buttonsmall" >LEARN MORE ></button>
         </div>
         <div class="div9 box"><h1 class="title" >STAKE/FARM<img class="imgicon" src="./yield_icon.5546a444.svg" alt=""></h1> 
-            <p>Earn dividends from your staked tokens</p>
+            <p>Earn dividends from staked tokens</p>
             <button class="buttonsmall" >LEARN MORE ></button>
         </div>
-        <div class="div10">   <button class="buttonsmall" >TWITTER</button>   <button class="buttonsmall" >MEDIUM</button> </div>
+        <div class="div10"> </div>
 
         <div class="div12">    </div>
         <div class="div13">   </div>
-        <nav>
+        <nav class="potea">
             <a href="#" id="menu-opener">
                 <?xml version="1.0" encoding="utf-8"?>
                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -386,11 +425,11 @@ ul.open {
 
         <script>
             $('#menu-opener').on('click', function(e){
-  e.preventDefault();
-  $(this).toggleClass('open');
-  $('ul').toggleClass('open');
-  $('nav').toggleClass('open');
-})
+              e.preventDefault();
+              $(this).toggleClass('open');
+              $('ul').toggleClass('open');
+              $('nav').toggleClass('open');
+            })
         </script>
 </body>
 </html>
