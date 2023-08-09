@@ -11,7 +11,7 @@
 </head>
 <style>
 .css-selector {
-    background: linear-gradient(44deg, rgb(0,82,253), rgb(0,82,253), rgb(0,82,253), rgb(0,82,253));
+    background: linear-gradient(44deg, rgb(225, 225, 225), rgb(255, 255, 255), rgb(225, 225, 225), rgb(255, 255, 255),);
     background-size: 800% 800%;
 
     -webkit-animation: AnimationName 18s ease infinite;
@@ -40,6 +40,18 @@
         overflow-y: hidden;
         font-family: 'Raleway', sans-serif;
     }
+    .bg {
+  /* The image used */
+  background-image: url("./crazy.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
     .parent {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -356,7 +368,7 @@ ul.open {
   }
 }
 </style>
-<body class="css-selector">
+<body class="css-selector bg">
     <div class="parent">
         <div class="div1">
             <img class="img" src="./logoz.png" alt="">
