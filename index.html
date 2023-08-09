@@ -37,18 +37,24 @@
     body {
        
         overflow-x: hidden;
-        overflow-y: hidden;
+    
         font-family: 'Raleway', sans-serif;
+        height:100vh;
+        width:100vw;
     }
     .bg {
   /* The image used */
   background-image: url("./crazy.png");
-
+ 
   /* Full height */
-  height: 100%;
+  height: 100vh;
+
+
+ 
+ 
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: 55% 96%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -58,28 +64,31 @@
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 45px;
     grid-row-gap: 45px;
-    margin-top: -50px;
-    height: 100vh;
+  
+    max-height: 100vh;
     width: 100vw;
     color: rgb(255, 255, 255);
+   
     }
 
 .div1 { grid-area: 1 / 1 / 2 / 3; 
 display: flex;
 flex-direction: row;
 line-height: 60px;
-margin-top: 100px;
+
+
 }
 .div2 { grid-area: 1 / 10 / 2 / 12;
   justify-content: flex-end;
 align-items: flex-end;
-margin-top: 100px;
+
+
 }
 .div3 { grid-area: 1 / 8 / 2 / 10;
 
 
 }
-.div4 { grid-area: 3 / 2 / 6 / 5;        padding: 05px 0 0 10px; display: relative; }
+.div4 { grid-area: 3 / 2 / 6 / 5;        padding: 05px 0 0 10px; }
 .div5 { grid-area: 3 / 5 / 6 / 8;         padding: 05px 0 0 10px;}
 .div6 { grid-area: 3 / 8 / 6 / 11;        padding: 05px 0 0 10px; }
 .div7 { grid-area: 6 / 2 / 9 / 5;        padding: 05px 0 0 10px; }
@@ -107,23 +116,23 @@ p {
     padding: 10px;
     color: white;
     font-size: 30px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     border-radius: 4px;
-    border: none;
+    border: solid 1px black;
 
 }
 .button:hover {
 
-    background-color: rgb(1, 249, 59);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
-    color: black;
-    transform: scale(1.02);
+    color: rgb(0,82,253);
+   
     font-weight: 300;
 
     letter-spacing: 1px;
-    box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
--webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
--moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.82);
+    box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.12);
+-webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.12);
+-moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.12);
 
 }
 .buttonsmall {
@@ -160,7 +169,8 @@ border-radius: 16px;
 background-color: rgb(0,82,253);
 transition: all .3s ease-in-out;
 color: rgb(255, 255, 255) !important;
-height:250px;
+
+height:200px;
 position: relative;
 box-shadow: -1px 0px 44px 1px rgba(0,0,0,0.42);
 -webkit-box-shadow: -1px 0px 4px 1px rgba(0,0,0,0.42);
@@ -172,9 +182,9 @@ box-shadow: -1px 0px 44px 1px rgba(0,0,0,0.42);
 
 border-radius: 8px;
 border: none;
-background: rgb(11, 79, 226);
+background: rgb(209, 209, 209);
 
-color: rgb(0, 0, 0) !important;
+color: blue !important;
 transform: scale(1.02);
 font-weight: 400;
 box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.52);
@@ -199,7 +209,7 @@ box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.52);
     margin-top: 12rem;
   }
   body {
-    height: 100%;
+    height: 100vh;
     overflow-y: scroll;
   }
   .img {
@@ -368,10 +378,10 @@ ul.open {
   }
 }
 </style>
-<body class="css-selector bg">
+<body class="bg">
     <div class="parent">
         <div class="div1">
-            <img class="img" src="./logoz.png" alt="">
+          <a href="https://64d257386c44bc18ee01e49a--zingy-croquembouche-36e99e.netlify.app/" target="_blank"> <img class="img" src="./logoz.png" alt=""></a>
             <h1 class="hide" >MEME<span class="bluu">HUB</span></h1>    
         </div>
         <div class="div2">
@@ -401,7 +411,7 @@ ul.open {
             <p>Grow with us</p>
             <button class="buttonsmall" >LEARN MORE ></button>
         </div>
-        <div class="div9 box"><h1 class="title" >STAKE/FARM<img class="imgicon" src="./yield_icon.5546a444.svg" alt=""></h1> 
+        <div class="div9 box"><h1 class="title" >YIELD<img class="imgicon" src="./yield_icon.5546a444.svg" alt=""></h1> 
             <p>Earn dividends from staked tokens</p>
             <button class="buttonsmall" >LEARN MORE ></button>
         </div>
